@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-@st.cache_data  # 👈 Add the caching decorator
+@st.cache_data  
 def load_data(csv):
     df = pd.read_csv(csv)
     return df
