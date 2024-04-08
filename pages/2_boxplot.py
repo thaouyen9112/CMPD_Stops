@@ -9,7 +9,6 @@ def load_data(csv):
 
 stops = pd.read_csv("data/Officer_Traffic_Stops.csv")
 
-## Box plot
 box=alt.Chart(stops).mark_boxplot().encode(
     x = alt.X('Was_a_Search_Conducted'),
     y = alt.Y('Driver_Age')
